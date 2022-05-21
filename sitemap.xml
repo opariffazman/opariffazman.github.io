@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>https://www.opariffazman.net/</loc>
+
+      <lastmod>2021-03-18T23:33:09+00:00</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.opariffazman.net/#intro</loc>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+
+    <url>
+
+      <loc>https://www.opariffazman.net/#whatido</loc>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+
+    <url>
+
+      <loc>https://www.opariffazman.net/#whoiam</loc>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.opariffazman.net/#myexperiences</loc>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+    <url>
+
+      <loc>https://www.opariffazman.net/#hobbies</loc>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+    <url>
+
+      <loc>https://www.opariffazman.net/#connect</loc>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+    <url>
+
+      <loc>https://steamtime.info/#!/s/opsedar</loc>
+
+      <changefreq>never</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.nexusmods.com/users/16167329?tab=user+files</loc>
+
+      <changefreq>never</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://steamcommunity.com/id/opsedar/</loc>
+
+      <changefreq>never</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://github.com/opariffazman</loc>
+
+      <changefreq>never</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.linkedin.com/in/opariffazman/</loc>
+
+      <changefreq>never</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.facebook.com/opariffazman</loc>
+
+      <changefreq>never</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+</urlset>
