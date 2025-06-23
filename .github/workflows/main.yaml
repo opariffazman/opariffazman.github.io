@@ -1,0 +1,58 @@
+name: Render and Deploy index.html
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Clone main repo
+        run: |
+          git clone https://github.com/opariffazman/opariffazman.git source
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        working-directory: ./source
+        run: npm install
+
+      - name: Patch index.js to output index.html
+        run: |
+          sed -i 's/README\.md/index.html/' source/index.js
+
+      - name: Generate index.html
+        working-directory: ./source
+        run: node index.js
+
+      - name: Move index.html to root
+        run: |
+          mv source/index.html index.html
+
+      - name: Copy image resources
+        run: |
+          mv source/opariffazman.png opariffazman.png
+          mv source/opariffazman.gif opariffazman.gif
+          mv source/meow_bongotap.gif meow_bongotap.gif
+
+      - name: Commit and push index.html
+        uses: test-room-7/action-update-file@v2.0.0
+        with:
+          file-path: |
+            index.html
+            opariffazman.png
+            opariffazman.gif
+            meow_bongotap.gif
+          commit-msg: "chore: update page content [skip ci]"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
