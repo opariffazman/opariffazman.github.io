@@ -28,13 +28,9 @@ jobs:
         working-directory: ./source
         run: npm install
 
-      - name: Patch index.js to output index.html
-        run: |
-          sed -i 's/README\.md/index.html/' source/index.js
-
       - name: Generate index.html
         working-directory: ./source
-        run: node index.js
+        run: node -e "require('./index.js').generateFile('index.html', true)"
 
       - name: Move index.html to root
         run: |
