@@ -39,6 +39,7 @@ jobs:
           cp source/links-pro.svg links-pro.svg
           cp source/links-social.svg links-social.svg
           cp source/opariffazman.png opariffazman.png
+          cp source/og-image.svg og-image.svg
 
       - name: Commit and push
         uses: test-room-7/action-update-file@v2.0.0
@@ -49,5 +50,6 @@ jobs:
             links-pro.svg
             links-social.svg
             opariffazman.png
+            og-image.svg
           commit-msg: "chore: update page content [skip ci]"
           github-token: ${{ secrets.GITHUB_TOKEN }}
