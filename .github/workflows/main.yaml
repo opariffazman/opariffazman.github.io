@@ -39,8 +39,6 @@ jobs:
       - name: Copy image resources
         run: |
           mv source/opariffazman.png opariffazman.png
-          mv source/opariffazman.gif opariffazman.gif
-          mv source/meow_bongotap.gif meow_bongotap.gif
 
       - name: Commit and push index.html
         uses: test-room-7/action-update-file@v2.0.0
@@ -48,7 +46,5 @@ jobs:
           file-path: |
             index.html
             opariffazman.png
-            opariffazman.gif
-            meow_bongotap.gif
           commit-msg: "chore: update page content [skip ci]"
           github-token: ${{ secrets.GITHUB_TOKEN }}
